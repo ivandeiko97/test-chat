@@ -44,6 +44,7 @@ export default {
       localStorage.removeItem('user')
       this.LOGOUT()
       this.$store.commit('messages/SET_MESSAGES', null)
+      this.ADD_ADDRESSED_USER(null)
       this.$router.push({ name: 'autorization' })
     }
   }
